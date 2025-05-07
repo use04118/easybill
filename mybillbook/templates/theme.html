@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charSet="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Invoice() {
+            return (
+                <div className="bg-white p-8">
+                    <div className="max-w-4xl mx-auto border border-gray-300 p-4">
+                        <div className="flex justify-between items-center mb-4">
+                            <div>
+                                <h1 className="text-xl font-bold">esperance technologies pvt ltd</h1>
+                                <p className="text-sm">Mobile: 9839072195</p>
+                                <p className="text-sm">GSTIN: 09AAECE6581D1ZK</p>
+                            </div>
+                            <div className="text-right">
+                                <p className="border border-gray-400 px-2 py-1 text-xs">TAX INVOICE</p>
+                                <p className="border border-gray-400 px-2 py-1 text-xs mt-1">ORIGINAL FOR RECIPIENT</p>
+                            </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-4">
+                            <div>
+                                <p className="text-sm"><strong>Invoice No.: </strong>AABBCCDD/202</p>
+                                <p className="text-sm"><strong>Invoice Date: </strong>17/01/2023</p>
+                                <p className="text-sm"><strong>Due Date: </strong>16/02/2023</p>
+                            </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-4 bg-gray-100 p-4">
+                            <div>
+                                <p className="text-sm font-bold">BILL TO</p>
+                                <p className="text-sm">Sample Party</p>
+                                <p className="text-sm">No F2, Outer Circle, Connaught Circus, New Delhi, 110001</p>
+                                <p className="text-sm">Mobile: 7400417400</p>
+                                <p className="text-sm">GSTIN: 07ABCHC2702H4ZZ</p>
+                                <p className="text-sm">State: DELHI</p>
+                                <p className="text-sm">age: age</p>
+                            </div>
+                            <div>
+                                <p className="text-sm font-bold">SHIP TO</p>
+                                <p className="text-sm">1234123 324324324, Bengaluru,</p>
+                            </div>
+                        </div>
+                        <table className="w-full border-collapse border border-gray-300 mb-4">
+                            <thead>
+                                <tr className="bg-gray-100">
+                                    <th className="border border-gray-300 p-2 text-left text-sm">ITEMS</th>
+                                    <th className="border border-gray-300 p-2 text-left text-sm">HSN</th>
+                                    <th className="border border-gray-300 p-2 text-left text-sm">QTY.</th>
+                                    <th className="border border-gray-300 p-2 text-left text-sm">RATE</th>
+                                    <th className="border border-gray-300 p-2 text-left text-sm">TAX</th>
+                                    <th className="border border-gray-300 p-2 text-left text-sm">AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="border border-gray-300 p-2 text-sm">
+                                        <p>SAMSUNG A30</p>
+                                        <p className="text-xs text-gray-500">samsung phone</p>
+                                    </td>
+                                    <td className="border border-gray-300 p-2 text-sm">1234</td>
+                                    <td className="border border-gray-300 p-2 text-sm">1 PCS</td>
+                                    <td className="border border-gray-300 p-2 text-sm">10,000</td>
+                                    <td className="border border-gray-300 p-2 text-sm">1,800 (18%)</td>
+                                    <td className="border border-gray-300 p-2 text-sm">11,800</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-gray-300 p-2 text-sm">
+                                        <p>PARLE-G 200G</p>
+                                        <p className="text-xs text-gray-500">best biscuit</p>
+                                    </td>
+                                    <td className="border border-gray-300 p-2 text-sm">40511209</td>
+                                    <td className="border border-gray-300 p-2 text-sm">1 BOX</td>
+                                    <td className="border border-gray-300 p-2 text-sm">342.86</td>
+                                    <td className="border border-gray-300 p-2 text-sm">17.14 (5%)</td>
+                                    <td className="border border-gray-300 p-2 text-sm">360</td>
+                                </tr>
+                                <tr>
+                                    <td className="border border-gray-300 p-2 text-sm">
+                                        <p>PUMA BLUE ROUND NECK T-SHIRT</p>
+                                    </td>
+                                    <td className="border border-gray-300 p-2 text-sm">2032</td>
+                                    <td className="border border-gray-300 p-2 text-sm">2 PCS</td>
+                                    <td className="border border-gray-300 p-2 text-sm">900</td>
+                                    <td className="border border-gray-300 p-2 text-sm">90 (5%)</td>
+                                    <td className="border border-gray-300 p-2 text-sm">1,890</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div className="flex justify-between items-center mb-4">
+                            <div>
+                                <p className="text-sm font-bold">SUBTOTAL</p>
+                            </div>
+                            <div>
+                                <p className="text-sm">₹ 1,907.14</p>
+                                <p className="text-sm">₹ 14,050</p>
+                            </div>
+                        </div>
+                        <div className="mb-4">
+                            <p className="text-sm font-bold">NOTES</p>
+                            <p className="text-sm">Sample Note</p>
+                        </div>
+                        <div className="mb-4">
+                            <p className="text-sm font-bold">TERMS AND CONDITIONS</p>
+                            <p className="text-sm">1. Goods once sold will not be taken back or exchanged</p>
+                            <p className="text-sm">2. All disputes are subject to [ENTER_YOUR_CITY_NAME] jurisdiction only</p>
+                        </div>
+                        <div className="flex justify-between items-center mb-4">
+                            <div>
+                                <p className="text-sm font-bold">TAXABLE AMOUNT</p>
+                                <p className="text-sm">IGST @5%</p>
+                                <p className="text-sm">IGST @18%</p>
+                            </div>
+                            <div>
+                                <p className="text-sm">₹ 12,142.86</p>
+                                <p className="text-sm">₹ 107.14</p>
+                                <p className="text-sm">₹ 1,800</p>
+                            </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-4">
+                            <div>
+                                <p className="text-sm font-bold">TOTAL AMOUNT</p>
+                                <p className="text-sm">Received Amount</p>
+                                <p className="text-sm">Balance</p>
+                            </div>
+                            <div>
+                                <p className="text-sm">₹ 14,050</p>
+                                <p className="text-sm">₹ 4,453.5</p>
+                                <p className="text-sm">₹ 9,596.5</p>
+                            </div>
+                        </div>
+                        <div className="text-right">
+                            <p className="text-sm font-bold">Total Amount (in words)</p>
+                            <p className="text-sm">Fourteen Thousand Fifty Rupees</p>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<Invoice />, document.getElementById('root'));
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</body>
+</html>
