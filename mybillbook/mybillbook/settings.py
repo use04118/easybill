@@ -177,7 +177,7 @@ AUTH_USER_MODEL = 'users.User'
 
 CORS_ORIGIN_ALLOW_ALL = True  # this allows all domains
 
-GSTIN_API_KEY="404eed6c5cc83932e7f701f2bfecc54a"
+
 
 CORS_ALLOW_ALL_ORIGINS = True
 
